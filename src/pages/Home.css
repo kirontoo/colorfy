@@ -1,0 +1,7 @@
+.app-header {
+    background-image: url('/src/images/jess-bailey-l3N9Q27zULw-unsplash.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+}
