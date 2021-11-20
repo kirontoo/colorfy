@@ -13,6 +13,8 @@ import "./ColorBook.css";
 import { useState, useEffect } from "react";
 import ColorPages from "../../ColorPages";
 import { Palettes } from "./Palettes";
+import ColorPalette from "../../components/ColorPalette";
+import ColorPicker from "../../components/ColorPicker";
 
 function ColorBook() {
   let [ coloringPage, setColoringPage ] = useState("city");
@@ -99,41 +101,15 @@ function ColorBook() {
               />
           </FormGroup>
 
-          <FormGroup>
-            <FormLabel>Color Palette</FormLabel>
-            <FormSelect 
-              onChange={onSelectPalette}
-              value={currentPalette}
-            >
-              { Object.keys(Palettes).map((name, index) => {
-                return (
-                  <option key={`${name}-${index}`} value={name}>{name}</option>
-                )
-              })
-              }
-            </FormSelect>
-          </FormGroup>
+          <ColorPalette 
+              onSelectColor={onSelectColor}
+          />
 
-          <Container className="p-0">
-            <ul className="d-flex flex-wrap m-0 p-0 palette">
-              { 
-              Palettes[currentPalette].map(( color ) => {
-                return (
-                  <li 
-                    key={color}
-                    className="p-3 m-1 rounded-2 shadow-sm palette__swatch" 
-                    style={{background: `#${color}`}}
-                    onClick={onSelectColor}
-                    />
-                )
-              })
-              }
-            </ul>
-          </Container>
         </Col>
         <Col className="bg-light p-4 shadow-sm rounded-3 colorbook d-flex justify-content-center align-items-center">
           <SVG 
             style={{height: "auto", minWidth: "60%"}}
+            className="colorpage"
             onClick={onColor}
             />
         </Col>

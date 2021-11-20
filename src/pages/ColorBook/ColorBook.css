@@ -20,12 +20,12 @@
 }
 
 .colorbook {
-  min-height: 45vh;
+  min-height: 35vh;
 }
 
 .colorpage {
   width: 100%;
-    height: auto;
+  height: auto;
 }
 
 @media screen and (min-width: 992px) {
@@ -35,5 +35,6 @@
 
   .colorpage {
     min-width: 60%;
+    width: unset;
   }
 }
