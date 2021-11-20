@@ -18,7 +18,6 @@ import ColorPicker from "../../components/ColorPicker";
 
 function ColorBook() {
   let [ coloringPage, setColoringPage ] = useState("city");
-  let [ currentPalette, setCurrentPalette ] = useState("amethyst");
   let [ currentColor, setCurrentColor ] = useState(`#${Palettes.amethyst[0]}`);
   let SVG = ColorPages[coloringPage];
 
@@ -28,10 +27,6 @@ function ColorBook() {
 
   function onSelectColoringPage(event) {
     setColoringPage(event.target.value);
-  }
-
-  function onSelectPalette(event) {
-    setCurrentPalette(event.target.value);
   }
 
   function onSelectColor(event) {
@@ -96,6 +91,7 @@ function ColorBook() {
           />
 
           <ColorPalette 
+              defaultPalette={"amethyst"}
               onSelectColor={onSelectColor}
           />
 
