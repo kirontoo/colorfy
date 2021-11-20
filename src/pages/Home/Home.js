@@ -117,7 +117,11 @@ function Home() {
                                     </div>
                                     <div className="amy-intro">
                                         <h3>Amy</h3>
-                                        <p></p>
+                                        <p>
+                                            Amy is a Frontend Developer with a
+                                            passion for learning new technologies.
+                                            Ask her about mechanical keyboards!
+                                        </p>
                                     </div>
                                 </div>
                             </div>
