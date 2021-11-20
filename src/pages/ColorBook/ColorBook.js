@@ -1,18 +1,13 @@
 import { 
   Col,
-  Container,
-  Form,
-  FormGroup,
-  FormLabel,
-  FormSelect,
   Row,
   Stack,  
 } from "react-bootstrap";
 import "./ColorBook.css";
 
 import { useState, useEffect } from "react";
-import ColorPages from "../../ColorPages";
-import { Palettes } from "./Palettes";
+import ColorPages from "../../lib/ColorPages";
+import { Palettes } from "../../lib/Palettes";
 import ColorPalette from "../../components/ColorPalette";
 import ColorPicker from "../../components/ColorPicker";
 import ColorPageSelector from "../../components/ColorPageSelector";
@@ -34,7 +29,7 @@ function ColorBook() {
     let color = event.target.value || event.target.style.background;
     
     // if the color is in rgb, convert to HEX befor saving to state
-    if ( color[0] == 'r') {
+    if ( color[0] === 'r') {
       let rgb = color.split("(")[1].split(")")[0].split(",");
       color = rgbToHex(parseInt(rgb[0]), parseInt(rgb[1]), parseInt(rgb[2]));
     }
@@ -44,7 +39,7 @@ function ColorBook() {
   // Decimal number to hex
   function decToHex(color) {
     var hexadecimal = color.toString(16);
-    return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
+    return hexadecimal.length === 1 ? "0" + hexadecimal : hexadecimal;
   }
 
   // convert from rgb value to hex

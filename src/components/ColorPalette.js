@@ -5,7 +5,7 @@ import {
   FormSelect,
 } from "react-bootstrap";
 import { useState } from "react";
-import { Palettes } from "../pages/ColorBook/Palettes";
+import { Palettes } from "../lib/Palettes";
 
 function ColorPalette({ defaultPalette, onSelectColor }) {
   let [ currentPalette, setCurrentPalette ] = useState(defaultPalette);

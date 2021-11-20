@@ -3,7 +3,7 @@ import {
   FormLabel,
   FormSelect
 } from "react-bootstrap";
-import ColorPages from "../ColorPages";
+import ColorPages from "../lib/ColorPages";
 
 function ColorPageSelector({ coloringPage ,onSelectColoringPage }) {
   return (
