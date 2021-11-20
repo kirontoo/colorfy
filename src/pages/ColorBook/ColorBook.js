@@ -90,16 +90,10 @@ function ColorBook() {
             </FormSelect>
           </FormGroup>
 
-          <FormGroup>
-            <Form.Label htmlFor="colorInput">Color picker</Form.Label>
-            <Form.Control
-              type="color"
-              id="colorInput"
-              value={currentColor}
-              title="Choose your color"
-              onChange={onSelectColor}
-              />
-          </FormGroup>
+          <ColorPicker 
+            currentColor={currentColor}
+            onSelectColor={onSelectColor}
+          />
 
           <ColorPalette 
               onSelectColor={onSelectColor}
