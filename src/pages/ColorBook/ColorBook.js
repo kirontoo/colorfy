@@ -67,11 +67,8 @@ function ColorBook() {
           className="bg-light p-4 shadow-sm rounded-3 d-flex flex-column colorbook"
           style={{ rowGap: "1rem" }}
         >
-          <Row className="flex-nowrap align-items-center">
-            <Col
-              sm="4"
-              lg="8"
-            >
+          <Row className="align-items-center">
+            <Col className="col-8">
               <span>Current Color</span>
             </Col>
             <Col className="w-100 p-3 rounded-2" style={{background: `${currentColor}`}}></Col>
@@ -92,10 +89,10 @@ function ColorBook() {
           </FormGroup>
 
           <FormGroup>
-            <Form.Label htmlFor="exampleColorInput">Color picker</Form.Label>
+            <Form.Label htmlFor="colorInput">Color picker</Form.Label>
             <Form.Control
               type="color"
-              id="exampleColorInput"
+              id="colorInput"
               value={currentColor}
               title="Choose your color"
               onChange={onSelectColor}
@@ -136,6 +133,7 @@ function ColorBook() {
         </Col>
         <Col className="bg-light p-4 shadow-sm rounded-3 colorbook d-flex justify-content-center align-items-center">
           <SVG 
+            style={{height: "auto", minWidth: "60%"}}
             onClick={onColor}
             />
         </Col>

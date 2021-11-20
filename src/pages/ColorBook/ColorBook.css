@@ -19,8 +19,21 @@
   cursor: pointer;
 }
 
-/* TODO: adjust height for mobile devices */
 .colorbook {
-  min-height: 80vh;
+  min-height: 45vh;
 }
 
+.colorpage {
+  width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .colorbook {
+    min-height: 75vh;
+  }
+
+  .colorpage {
+    min-width: 60%;
+  }
+}
