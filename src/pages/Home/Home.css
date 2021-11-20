@@ -1,0 +1,59 @@
+.app-header {
+    background-image: url('/src/images/jess-bailey-l3N9Q27zULw-unsplash.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.amber-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.amber-picture-background {
+    height: 92%;
+    width: 92%;
+    background-image: url('../../images/IMG_0278.JPG');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.amber-picture-background:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+
+.zelle-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
+}
+
+.zelle-picture-background {
+    height: 92%;
+    width: 92%;
+    background-image: url('../../images/zelle.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.zelle-picture-background:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
