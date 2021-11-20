@@ -15,15 +15,16 @@ import ColorPages from "../../ColorPages";
 import { Palettes } from "./Palettes";
 import ColorPalette from "../../components/ColorPalette";
 import ColorPicker from "../../components/ColorPicker";
+import ColorPageSelector from "../../components/ColorPageSelector";
 
 function ColorBook() {
   let [ coloringPage, setColoringPage ] = useState("city");
   let [ currentColor, setCurrentColor ] = useState(`#${Palettes.amethyst[0]}`);
-  let SVG = ColorPages[coloringPage];
+  let [ SVG, setSVG ] = useState(ColorPages[coloringPage]);
 
   useEffect( () => {
-    SVG = ColorPages[coloringPage];
-  }, [coloringPage])
+    setSVG(ColorPages[coloringPage])
+  }, [coloringPage]);
 
   function onSelectColoringPage(event) {
     setColoringPage(event.target.value);
@@ -31,6 +32,8 @@ function ColorBook() {
 
   function onSelectColor(event) {
     let color = event.target.value || event.target.style.background;
+    
+    // if the color is in rgb, convert to HEX befor saving to state
     if ( color[0] == 'r') {
       let rgb = color.split("(")[1].split(")")[0].split(",");
       color = rgbToHex(parseInt(rgb[0]), parseInt(rgb[1]), parseInt(rgb[2]));
@@ -38,11 +41,13 @@ function ColorBook() {
     setCurrentColor(color);
   }
 
+  // Decimal number to hex
   function decToHex(color) {
     var hexadecimal = color.toString(16);
     return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
   }
 
+  // convert from rgb value to hex
   function rgbToHex(red, green, blue) {
     return "#" + decToHex(red) + decToHex(green) + decToHex(blue);
   }
@@ -70,20 +75,11 @@ function ColorBook() {
             </Col>
             <Col className="w-100 p-3 rounded-2" style={{background: `${currentColor}`}}></Col>
           </Row>
-          <FormGroup>
-            <FormLabel>Coloring Page</FormLabel>
-            <FormSelect 
-              onChange={onSelectColoringPage}
-              value={coloringPage}
-            >
-              { Object.keys(ColorPages).map((name) => {
-                return (
-                  <option key={name} value={name}>{name}</option>
-                )
-              })
-              }
-            </FormSelect>
-          </FormGroup>
+
+          <ColorPageSelector 
+            coloringPage={coloringPage}
+            onSelectColoringPage={onSelectColoringPage}
+          />
 
           <ColorPicker 
             currentColor={currentColor}
