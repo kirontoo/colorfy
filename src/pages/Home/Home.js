@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { github, linkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Home() {
     return (
@@ -136,10 +136,10 @@ function Home() {
                                     </div>
                                     <div className="amber-contact">
                                         <a href="https://github.com/Ope522">
-                                            <FontAwesomeIcon icon={github} />
+                                            <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                         <a href="https://www.linkedin.com/in/amberterry/">
-                                            <FontAwesomeIcon icon={linkedin} />
+                                            <FontAwesomeIcon icon={faLinkedin} />
                                         </a>
                                     </div>
                                 </div>
