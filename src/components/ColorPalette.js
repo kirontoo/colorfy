@@ -1,12 +1,8 @@
 import { 
-  Col,
   Container,
-  Form,
   FormGroup,
   FormLabel,
   FormSelect,
-  Row,
-  Stack,  
 } from "react-bootstrap";
 import { useState } from "react";
 import { Palettes } from "../pages/ColorBook/Palettes";
