@@ -1,36 +1,31 @@
 import { 
-  Image,
-  Stack,  
+  Col,
   Container,
   Form,
   FormGroup,
   FormLabel,
   FormSelect,
-  Col,
   Row,
-  Dropdown,
-  Button,
+  Stack,  
 } from "react-bootstrap";
 import "./ColorBook.css";
 
-import { useState } from "react";
-import { renderToStaticMarkup } from 'react-dom/server';
+import { useState, useEffect } from "react";
 import ColorPages from "../../ColorPages";
 import { Palettes } from "./Palettes";
 
-function LoadSvg({svg}) {
-  console.log("svg", svg);
-  const SVG = ColorPages.SvgFiles[svg];
-  return <SVG/>;
-}
-
 function ColorBook() {
-  let [ coloringPage, setColoringPage ] = useState(ColorPages.Pages[0]);
+  let [ coloringPage, setColoringPage ] = useState("city");
   let [ currentPalette, setCurrentPalette ] = useState("amethyst");
   let [ currentColor, setCurrentColor ] = useState(`#${Palettes.amethyst[0]}`);
+  let SVG = ColorPages[coloringPage];
+
+  useEffect( () => {
+    SVG = ColorPages[coloringPage];
+  }, [coloringPage])
 
   function onSelectColoringPage(event) {
-    setColoringPage(ColorPages.Pages[ event.target.value ]);
+    setColoringPage(event.target.value);
   }
 
   function onSelectPalette(event) {
@@ -39,7 +34,24 @@ function ColorBook() {
 
   function onSelectColor(event) {
     let color = event.target.value || event.target.style.background;
+    if ( color[0] == 'r') {
+      let rgb = color.split("(")[1].split(")")[0].split(",");
+      color = rgbToHex(parseInt(rgb[0]), parseInt(rgb[1]), parseInt(rgb[2]));
+    }
     setCurrentColor(color);
+  }
+
+  function decToHex(color) {
+    var hexadecimal = color.toString(16);
+    return hexadecimal.length == 1 ? "0" + hexadecimal : hexadecimal;
+  }
+
+  function rgbToHex(red, green, blue) {
+    return "#" + decToHex(red) + decToHex(green) + decToHex(blue);
+  }
+
+  function onColor(event) {
+    event.target.style.fill = currentColor;
   }
 
   return (
@@ -52,19 +64,27 @@ function ColorBook() {
         <Col 
           sm={12}
           lg={3} 
-          className="bg-light p-4 shadow-sm rounded-3 d-flex flex-column"
+          className="bg-light p-4 shadow-sm rounded-3 d-flex flex-column colorbook"
           style={{ rowGap: "1rem" }}
         >
+          <Row className="flex-nowrap align-items-center">
+            <Col
+              sm="4"
+              lg="8"
+            >
+              <span>Current Color</span>
+            </Col>
+            <Col className="w-100 p-3 rounded-2" style={{background: `${currentColor}`}}></Col>
+          </Row>
           <FormGroup>
-            <FormLabel>Select coloring page</FormLabel>
+            <FormLabel>Coloring Page</FormLabel>
             <FormSelect 
-              ariaLabel="Select coloring page" 
               onChange={onSelectColoringPage}
               value={coloringPage}
             >
-              { ColorPages.Pages.map((name, index) => {
+              { Object.keys(ColorPages).map((name) => {
                 return (
-                  <option key={`${name}-${index}`} value={index}>{name}</option>
+                  <option key={name} value={name}>{name}</option>
                 )
               })
               }
@@ -76,22 +96,15 @@ function ColorBook() {
             <Form.Control
               type="color"
               id="exampleColorInput"
-              defaultValue="#563d7c"
+              value={currentColor}
               title="Choose your color"
               onChange={onSelectColor}
               />
           </FormGroup>
 
-          <Container>
-            <Row>
-              <Col></Col>
-            </Row>
-          </Container>
-
           <FormGroup>
-            <FormLabel>Select Color Palette</FormLabel>
+            <FormLabel>Color Palette</FormLabel>
             <FormSelect 
-              ariaLabel="Select coloring page" 
               onChange={onSelectPalette}
               value={currentPalette}
             >
@@ -104,26 +117,27 @@ function ColorBook() {
             </FormSelect>
           </FormGroup>
 
-          <Container>
+          <Container className="p-0">
             <ul className="d-flex flex-wrap m-0 p-0 palette">
               { 
-                Palettes[currentPalette].map(( color ) => {
-                  return (
-                    <li 
-                      className="p-3 m-1 rounded-2 shadow-sm palette__swatch" 
-                      style={{background: `#${color}`}}
-                      onClick={onSelectColor}
+              Palettes[currentPalette].map(( color ) => {
+                return (
+                  <li 
+                    key={color}
+                    className="p-3 m-1 rounded-2 shadow-sm palette__swatch" 
+                    style={{background: `#${color}`}}
+                    onClick={onSelectColor}
                     />
-                  )
-                })
+                )
+              })
               }
             </ul>
           </Container>
-          {/** TODO: color palets here? **/}
         </Col>
-        <Col className="bg-light p-4 shadow-sm rounded-3 min-vh-75">
-          {`coloring page: ${coloringPage}\n`}
-          {`selected color: ${currentColor}`}
+        <Col className="bg-light p-4 shadow-sm rounded-3 colorbook d-flex justify-content-center align-items-center">
+          <SVG 
+            onClick={onColor}
+            />
         </Col>
       </Row>
     </Stack>
