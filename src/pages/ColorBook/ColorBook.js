@@ -1,45 +1,54 @@
 import { 
-  Image,
-  Stack,  
-  Container,
-  Form,
-  FormGroup,
-  FormLabel,
-  FormSelect,
   Col,
   Row,
-  Dropdown,
-  Button,
+  Stack,  
 } from "react-bootstrap";
 import "./ColorBook.css";
 
-import { useState } from "react";
-import { renderToStaticMarkup } from 'react-dom/server';
-import ColorPages from "../../ColorPages";
-import { Palettes } from "./Palettes";
-
-function LoadSvg({svg}) {
-  console.log("svg", svg);
-  const SVG = ColorPages.SvgFiles[svg];
-  return <SVG/>;
-}
+import { useState, useEffect } from "react";
+import ColorPages from "../../lib/ColorPages";
+import { Palettes } from "../../lib/Palettes";
+import ColorPalette from "../../components/ColorPalette";
+import ColorPicker from "../../components/ColorPicker";
+import ColorPageSelector from "../../components/ColorPageSelector";
 
 function ColorBook() {
-  let [ coloringPage, setColoringPage ] = useState(ColorPages.Pages[0]);
-  let [ currentPalette, setCurrentPalette ] = useState("amethyst");
+  let [ coloringPage, setColoringPage ] = useState("city");
   let [ currentColor, setCurrentColor ] = useState(`#${Palettes.amethyst[0]}`);
+  let [ SVG, setSVG ] = useState(ColorPages[coloringPage]);
+
+  useEffect( () => {
+    setSVG(ColorPages[coloringPage])
+  }, [coloringPage]);
 
   function onSelectColoringPage(event) {
-    setColoringPage(ColorPages.Pages[ event.target.value ]);
-  }
-
-  function onSelectPalette(event) {
-    setCurrentPalette(event.target.value);
+    setColoringPage(event.target.value);
   }
 
   function onSelectColor(event) {
     let color = event.target.value || event.target.style.background;
+    
+    // if the color is in rgb, convert to HEX befor saving to state
+    if ( color[0] === 'r') {
+      let rgb = color.split("(")[1].split(")")[0].split(",");
+      color = rgbToHex(parseInt(rgb[0]), parseInt(rgb[1]), parseInt(rgb[2]));
+    }
     setCurrentColor(color);
+  }
+
+  // Decimal number to hex
+  function decToHex(color) {
+    var hexadecimal = color.toString(16);
+    return hexadecimal.length === 1 ? "0" + hexadecimal : hexadecimal;
+  }
+
+  // convert from rgb value to hex
+  function rgbToHex(red, green, blue) {
+    return "#" + decToHex(red) + decToHex(green) + decToHex(blue);
+  }
+
+  function onColor(event) {
+    event.target.style.fill = currentColor;
   }
 
   return (
@@ -52,78 +61,38 @@ function ColorBook() {
         <Col 
           sm={12}
           lg={3} 
-          className="bg-light p-4 shadow-sm rounded-3 d-flex flex-column"
+          className="bg-light p-4 shadow-sm rounded-3 d-flex flex-column colorbook"
           style={{ rowGap: "1rem" }}
         >
-          <FormGroup>
-            <FormLabel>Select coloring page</FormLabel>
-            <FormSelect 
-              ariaLabel="Select coloring page" 
-              onChange={onSelectColoringPage}
-              value={coloringPage}
-            >
-              { ColorPages.Pages.map((name, index) => {
-                return (
-                  <option key={`${name}-${index}`} value={index}>{name}</option>
-                )
-              })
-              }
-            </FormSelect>
-          </FormGroup>
+          <Row className="align-items-center">
+            <Col className="col-8">
+              <span>Current Color</span>
+            </Col>
+            <Col className="w-100 p-3 rounded-2" style={{background: `${currentColor}`}}></Col>
+          </Row>
 
-          <FormGroup>
-            <Form.Label htmlFor="exampleColorInput">Color picker</Form.Label>
-            <Form.Control
-              type="color"
-              id="exampleColorInput"
-              defaultValue="#563d7c"
-              title="Choose your color"
-              onChange={onSelectColor}
-              />
-          </FormGroup>
+          <ColorPageSelector 
+            coloringPage={coloringPage}
+            onSelectColoringPage={onSelectColoringPage}
+          />
 
-          <Container>
-            <Row>
-              <Col></Col>
-            </Row>
-          </Container>
+          <ColorPicker 
+            currentColor={currentColor}
+            onSelectColor={onSelectColor}
+          />
 
-          <FormGroup>
-            <FormLabel>Select Color Palette</FormLabel>
-            <FormSelect 
-              ariaLabel="Select coloring page" 
-              onChange={onSelectPalette}
-              value={currentPalette}
-            >
-              { Object.keys(Palettes).map((name, index) => {
-                return (
-                  <option key={`${name}-${index}`} value={name}>{name}</option>
-                )
-              })
-              }
-            </FormSelect>
-          </FormGroup>
+          <ColorPalette 
+              defaultPalette={"amethyst"}
+              onSelectColor={onSelectColor}
+          />
 
-          <Container>
-            <ul className="d-flex flex-wrap m-0 p-0 palette">
-              { 
-                Palettes[currentPalette].map(( color ) => {
-                  return (
-                    <li 
-                      className="p-3 m-1 rounded-2 shadow-sm palette__swatch" 
-                      style={{background: `#${color}`}}
-                      onClick={onSelectColor}
-                    />
-                  )
-                })
-              }
-            </ul>
-          </Container>
-          {/** TODO: color palets here? **/}
         </Col>
-        <Col className="bg-light p-4 shadow-sm rounded-3 min-vh-75">
-          {`coloring page: ${coloringPage}\n`}
-          {`selected color: ${currentColor}`}
+        <Col className="bg-light p-4 shadow-sm rounded-3 colorbook d-flex justify-content-center align-items-center">
+          <SVG 
+            style={{height: "auto", minWidth: "60%"}}
+            className="colorpage"
+            onClick={onColor}
+            />
         </Col>
       </Row>
     </Stack>

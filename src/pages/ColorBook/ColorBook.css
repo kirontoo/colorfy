@@ -19,3 +19,22 @@
   cursor: pointer;
 }
 
+.colorbook {
+  min-height: 35vh;
+}
+
+.colorpage {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .colorbook {
+    min-height: 75vh;
+  }
+
+  .colorpage {
+    min-width: 60%;
+    width: unset;
+  }
+}
