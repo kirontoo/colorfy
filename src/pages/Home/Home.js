@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import image1 from '../../images/Coloring_App.png';
-import image2 from '../../images/Page_Picker.png';
+import image2 from '../../images/Page_picker.png';
 import image3 from '../../images/Color_picker.png';
 import image4 from '../../images/Color_palette.png';
 import image5 from '../../images/Zelle_icon.png';
@@ -20,8 +20,8 @@ function Home() {
                                     <div class="col-sm-6 d-flex flex-column p-2 align-items-start">
                                         <h3 class="card-title">Colorfy</h3>
                                         <p class="card-text">
-                                        Colorfy is a simle coloring book app that you can
-                                        play around with on your mobile device
+                                            Colorfy is a simle coloring book app that you can play
+                                            around with on your mobile device
                                         </p>
                                         <Link to="/colorbook">
                                             <Button>Get Started</Button>
@@ -55,12 +55,10 @@ function Home() {
                                         ></img>
                                     </div>
                                     <div class="col-sm-6 d-flex flex-column p-2 align-items-start justify-content-center">
-                                        <h3 class="card-title">
-                                        Choose a Coloring Page
-                                        </h3>
+                                        <h3 class="card-title">Choose a Coloring Page</h3>
                                         <p class="card-text">
-                                        From the drop-down menu, you are able to choose
-                                        which coloring page you would like to work with
+                                            From the drop-down menu, you are able to choose which
+                                            coloring page you would like to work with
                                         </p>
                                     </div>
                                 </div>
@@ -72,12 +70,9 @@ function Home() {
                             <div class="card" id="card3">
                                 <div class="card-body">
                                     <div class="col-sm-6 d-flex flex-column p-2 align-items-start justify-content-center">
-                                        <h3 class="card-title">
-                                        Use a Color Picker
-                                        </h3>
+                                        <h3 class="card-title">Use a Color Picker</h3>
                                         <p class="card-text">
-                                        Choose your color from a color picker to color your
-                                        page
+                                            Choose your color from a color picker to color your page
                                         </p>
                                     </div>
                                     <div class="col-sm-6 text-right">
@@ -106,12 +101,9 @@ function Home() {
                                         ></img>
                                     </div>
                                     <div class="col-sm-6 d-flex flex-column align-items-start justify-content-center">
-                                        <h3 class="card-title">
-                                        Use a Color Palette
-                                        </h3>
+                                        <h3 class="card-title">Use a Color Palette</h3>
                                         <p class="card-text">
-                                        Choose a color palette, and then pick a color to
-                                        use
+                                            Choose a color palette, and then pick a color to use
                                         </p>
                                     </div>
                                 </div>
@@ -149,8 +141,8 @@ function Home() {
                                     </div>
                                     <h3 className="profile-name">Amy</h3>
                                     <p className="intro">
-                                    Amy is a Frontend Developer with a passion for learning
-                                    new technologies. Ask her about mechanical keyboards!
+                                        Amy is a Frontend Developer with a passion for learning new
+                                        technologies. Ask her about mechanical keyboards!
                                     </p>
                                     <div className="contact">
                                         <a href="https://github.com/kirontoo">
@@ -169,9 +161,9 @@ function Home() {
                                     </div>
                                     <h3 className="profile-name">Amber</h3>
                                     <p className="intro">
-                                    Amber is a recent Full Stack Developer bootcamp grad. In
-                                    her freetime she enjoys camping, hiking, mountain
-                                    biking, and anything that gets her outdoors
+                                        Amber is a recent Full Stack Developer bootcamp grad. In her
+                                        freetime she enjoys camping, hiking, mountain biking, and
+                                        anything that gets her outdoors
                                     </p>
                                     <div className="contact">
                                         <a href="https://github.com/Ope522">
@@ -193,9 +185,9 @@ function Home() {
                                     </div>
                                     <h3 className="profile-name">Roselle</h3>
                                     <p className="intro">
-                                    Roselle is a product designer with a background in
-                                    interior design, graphic design, and project management.
-                                    Loves Figma, cats, and food!
+                                        Roselle is a product designer with a background in interior
+                                        design, graphic design, and project management. Loves Figma,
+                                        cats, and food!
                                     </p>
                                     <div className="contact">
                                         <a href="https://uxzelle.com/">
