@@ -23,7 +23,7 @@ Colorfy was created as a part of the a Hackthon hosted by [Mintbean](https://www
 - Drop down color pages selection
 
 ### Demo
-<iframe src='https://gfycat.com/ifr/EquatorialAngelicJunebug' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe>
+![colorfy gif](https://github.com/kirontoo/colorfy/blob/main/src/images/colorify_demo.gif)
 
 ## Installation
 Clone this repo and then install the required packages using `npm` or `yarn`
