@@ -1,11 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 function Layout({ navLinks, brand, children }) {
     return (
-        <Router>
+        <>
             <Navbar bg="dark" expand="lg" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">{brand}</Navbar.Brand>
@@ -18,7 +17,7 @@ function Layout({ navLinks, brand, children }) {
             <Container as="main" className="my-4">
                 {children}
             </Container>
-        </Router>
+        </>
     );
 }
 
