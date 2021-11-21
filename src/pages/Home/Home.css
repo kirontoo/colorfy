@@ -161,3 +161,7 @@ h2 {
 .intro {
     text-align: center;
 }
+
+.app-header {
+    padding-bottom: 5rem;
+}

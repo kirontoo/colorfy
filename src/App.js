@@ -12,7 +12,7 @@ function NavLinks() {
         <>
             <NavLink>
                 <Link to="/" className="text-decoration-none text-white" >
-                    Home
+                    Features
                 </Link>
             </NavLink>
             <Link to="/colorbook">
