@@ -20,7 +20,7 @@ function Home() {
                                     <div class="col-sm-6 d-flex flex-column p-2 align-items-start">
                                         <h3 class="card-title">Colorfy</h3>
                                         <p class="card-text">
-                                        Colorfy is a simle coloring book app that you can
+                                        Colorfy is a simple coloring book app that you can
                                         play around with on your mobile device
                                         </p>
                                         <Link to="/colorbook">
