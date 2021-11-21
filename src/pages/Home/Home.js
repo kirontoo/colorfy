@@ -47,7 +47,7 @@ function Home() {
                                                 class=""
                                                 src={image2}
                                                 alt="sans"
-                                                width="200px"
+                                                width="500px"
                                             ></img>
                                         </div>
                                         <div class="col-sm-6">
@@ -83,7 +83,7 @@ function Home() {
                                                 class=""
                                                 src={image3}
                                                 alt="sans"
-                                                width="200px"
+                                                width="500px"
                                             ></img>
                                         </div>
                                     </div>
@@ -101,7 +101,7 @@ function Home() {
                                                 class=""
                                                 src={image4}
                                                 alt="sans"
-                                                width="200px"
+                                                width="500px"
                                             ></img>
                                         </div>
                                         <div class="col-sm-6">
