@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/colorfy/static/css/main.757cbbed.chunk.css",
-    "main.js": "/colorfy/static/js/main.3db9be6f.chunk.js",
-    "main.js.map": "/colorfy/static/js/main.3db9be6f.chunk.js.map",
-    "runtime-main.js": "/colorfy/static/js/runtime-main.b9bbf60d.js",
-    "runtime-main.js.map": "/colorfy/static/js/runtime-main.b9bbf60d.js.map",
+    "main.js": "/colorfy/static/js/main.54d976e3.chunk.js",
+    "main.js.map": "/colorfy/static/js/main.54d976e3.chunk.js.map",
+    "runtime-main.js": "/colorfy/static/js/runtime-main.9fc69715.js",
+    "runtime-main.js.map": "/colorfy/static/js/runtime-main.9fc69715.js.map",
     "static/css/2.383c0125.chunk.css": "/colorfy/static/css/2.383c0125.chunk.css",
-    "static/js/2.c5a21304.chunk.js": "/colorfy/static/js/2.c5a21304.chunk.js",
-    "static/js/2.c5a21304.chunk.js.map": "/colorfy/static/js/2.c5a21304.chunk.js.map",
-    "static/js/3.04fa7290.chunk.js": "/colorfy/static/js/3.04fa7290.chunk.js",
-    "static/js/3.04fa7290.chunk.js.map": "/colorfy/static/js/3.04fa7290.chunk.js.map",
+    "static/js/2.d2237ea5.chunk.js": "/colorfy/static/js/2.d2237ea5.chunk.js",
+    "static/js/2.d2237ea5.chunk.js.map": "/colorfy/static/js/2.d2237ea5.chunk.js.map",
+    "static/js/3.280f78ae.chunk.js": "/colorfy/static/js/3.280f78ae.chunk.js",
+    "static/js/3.280f78ae.chunk.js.map": "/colorfy/static/js/3.280f78ae.chunk.js.map",
     "index.html": "/colorfy/index.html",
     "static/css/2.383c0125.chunk.css.map": "/colorfy/static/css/2.383c0125.chunk.css.map",
     "static/css/main.757cbbed.chunk.css.map": "/colorfy/static/css/main.757cbbed.chunk.css.map",
-    "static/js/2.c5a21304.chunk.js.LICENSE.txt": "/colorfy/static/js/2.c5a21304.chunk.js.LICENSE.txt",
+    "static/js/2.d2237ea5.chunk.js.LICENSE.txt": "/colorfy/static/js/2.d2237ea5.chunk.js.LICENSE.txt",
     "static/media/Home.css": "/colorfy/static/media/zelle.dcb61977.jpg",
     "static/media/city.50ba5c27.svg": "/colorfy/static/media/city.50ba5c27.svg",
     "static/media/dojo.eeba2a97.svg": "/colorfy/static/media/dojo.eeba2a97.svg",
@@ -24,10 +24,10 @@
     "static/media/taskade.23872e3a.svg": "/colorfy/static/media/taskade.23872e3a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9bbf60d.js",
+    "static/js/runtime-main.9fc69715.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.c5a21304.chunk.js",
+    "static/js/2.d2237ea5.chunk.js",
     "static/css/main.757cbbed.chunk.css",
-    "static/js/main.3db9be6f.chunk.js"
+    "static/js/main.54d976e3.chunk.js"
   ]
 }
