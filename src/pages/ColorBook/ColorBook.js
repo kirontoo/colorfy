@@ -53,7 +53,7 @@ function ColorBook() {
 
   return (
     <Stack direction="vertical" gap={3} >
-      <h3>Colorbook</h3>
+      <h3 className="w-100 text-align-center">Colorbook</h3>
       <Row 
         className="align-items-start"
         style={{columnGap: "1rem", rowGap: "1rem"}}
