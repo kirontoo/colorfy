@@ -5,6 +5,7 @@ import image1 from '../../images/Coloring_App.png';
 import image2 from '../../images/Page_Picker.png';
 import image3 from '../../images/Color_picker.png';
 import image4 from '../../images/Color_palette.png';
+import image5 from '../../images/Zelle_icon.png';
 import './Home.css';
 
 function Home() {
@@ -28,7 +29,11 @@ function Home() {
                                             </Link>
                                         </div>
                                         <div class="col-sm-6 text-right">
-                                            <img src={image1} alt="sans" width="500px"></img>
+                                            <img
+                                                src={image1}
+                                                alt="Coloring Page"
+                                                width="500px"
+                                            ></img>
                                         </div>
                                     </div>
                                 </div>
@@ -46,7 +51,7 @@ function Home() {
                                             <img
                                                 class=""
                                                 src={image2}
-                                                alt="sans"
+                                                alt="Choose which page you'd like to use"
                                                 width="500px"
                                             ></img>
                                         </div>
@@ -82,7 +87,7 @@ function Home() {
                                             <img
                                                 class=""
                                                 src={image3}
-                                                alt="sans"
+                                                alt="Use a color picker"
                                                 width="500px"
                                             ></img>
                                         </div>
@@ -100,8 +105,8 @@ function Home() {
                                             <img
                                                 class=""
                                                 src={image4}
-                                                alt="sans"
-                                                width="500px"
+                                                alt="Use a color palette"
+                                                width="400px"
                                             ></img>
                                         </div>
                                         <div class="col-sm-6">
@@ -205,11 +210,14 @@ function Home() {
                                         </p>
                                     </div>
                                     <div className="zelle-contact">
-                                        <a href="#">
-                                            <i class="devicon-github-original colored"></i>
+                                        <a href="https://uxzelle.com/">
+                                            <img class="icon" src={image5}></img>
                                         </a>
-                                        <a href="#">
+                                        <a href="https://linkedin.com/in/rosellebernardino">
                                             <i class="devicon-linkedin-plain colored"></i>
+                                        </a>
+                                        <a href="https://twitter.com/uxzelle">
+                                            <i class="devicon-twitter-original"></i>
                                         </a>
                                     </div>
                                 </div>
