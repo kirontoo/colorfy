@@ -1,13 +1,18 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-router-dom";
 
 function Layout({ navLinks, brand, children }) {
     return (
         <>
             <Navbar bg="dark" expand="lg" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/">{brand}</Navbar.Brand>
+                    <Link to="/" className="text-decoration-none">
+                        <Navbar.Brand>
+                            {brand}
+                        </Navbar.Brand>
+                    </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                         <Nav 
@@ -22,7 +27,7 @@ function Layout({ navLinks, brand, children }) {
             <Container as="main" className="my-4">
                 {children}
             </Container>
-        </>
+            </>
     );
 }
 
