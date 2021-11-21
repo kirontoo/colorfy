@@ -1,10 +1,7 @@
 import React from 'react';
 import './Home.css';
-<<<<<<< HEAD
-=======
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
->>>>>>> 1476302775c6d633d80194b54ee1645662ccf395
 
 function Home() {
     return (
@@ -143,17 +140,14 @@ function Home() {
                                     </div>
                                     <div className="amber-contact">
                                         <a href="https://github.com/Ope522">
-<<<<<<< HEAD
                                             <i class="devicon-github-original colored"></i>
                                         </a>
                                         <a href="https://www.linkedin.com/in/amberterry/">
                                             <i class="devicon-linkedin-plain colored"></i>
-=======
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                         <a href="https://www.linkedin.com/in/amberterry/">
                                             <FontAwesomeIcon icon={faLinkedin} />
->>>>>>> 1476302775c6d633d80194b54ee1645662ccf395
                                         </a>
                                     </div>
                                 </div>
