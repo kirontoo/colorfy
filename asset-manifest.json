@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/colorfy/static/css/main.186b4d00.chunk.css",
-    "main.js": "/colorfy/static/js/main.14010781.chunk.js",
-    "main.js.map": "/colorfy/static/js/main.14010781.chunk.js.map",
+    "main.js": "/colorfy/static/js/main.b7fc9f72.chunk.js",
+    "main.js.map": "/colorfy/static/js/main.b7fc9f72.chunk.js.map",
     "runtime-main.js": "/colorfy/static/js/runtime-main.f0d2ec47.js",
     "runtime-main.js.map": "/colorfy/static/js/runtime-main.f0d2ec47.js.map",
     "static/css/2.383c0125.chunk.css": "/colorfy/static/css/2.383c0125.chunk.css",
-    "static/js/2.3d362046.chunk.js": "/colorfy/static/js/2.3d362046.chunk.js",
-    "static/js/2.3d362046.chunk.js.map": "/colorfy/static/js/2.3d362046.chunk.js.map",
+    "static/js/2.20ce4407.chunk.js": "/colorfy/static/js/2.20ce4407.chunk.js",
+    "static/js/2.20ce4407.chunk.js.map": "/colorfy/static/js/2.20ce4407.chunk.js.map",
     "static/js/3.2df1a7b3.chunk.js": "/colorfy/static/js/3.2df1a7b3.chunk.js",
     "static/js/3.2df1a7b3.chunk.js.map": "/colorfy/static/js/3.2df1a7b3.chunk.js.map",
     "index.html": "/colorfy/index.html",
     "static/css/2.383c0125.chunk.css.map": "/colorfy/static/css/2.383c0125.chunk.css.map",
     "static/css/main.186b4d00.chunk.css.map": "/colorfy/static/css/main.186b4d00.chunk.css.map",
-    "static/js/2.3d362046.chunk.js.LICENSE.txt": "/colorfy/static/js/2.3d362046.chunk.js.LICENSE.txt",
-    "static/media/Color_palette.26278b6c.png": "/colorfy/static/media/Color_palette.26278b6c.png",
-    "static/media/Color_picker.ee7ce08d.png": "/colorfy/static/media/Color_picker.ee7ce08d.png",
-    "static/media/Coloring_App.be8c2b61.png": "/colorfy/static/media/Coloring_App.be8c2b61.png",
+    "static/js/2.20ce4407.chunk.js.LICENSE.txt": "/colorfy/static/js/2.20ce4407.chunk.js.LICENSE.txt",
+    "static/media/Color_palette.d9ca3a88.png": "/colorfy/static/media/Color_palette.d9ca3a88.png",
+    "static/media/Color_picker.676730dd.png": "/colorfy/static/media/Color_picker.676730dd.png",
+    "static/media/Coloring_App.90b91dd7.png": "/colorfy/static/media/Coloring_App.90b91dd7.png",
     "static/media/Home.css": "/colorfy/static/media/zelle.dcb61977.jpg",
-    "static/media/Page_Picker.a2163b39.png": "/colorfy/static/media/Page_Picker.a2163b39.png",
+    "static/media/Page_picker.07c95dab.png": "/colorfy/static/media/Page_picker.07c95dab.png",
     "static/media/Zelle_icon.47e73a07.png": "/colorfy/static/media/Zelle_icon.47e73a07.png",
     "static/media/city.50ba5c27.svg": "/colorfy/static/media/city.50ba5c27.svg",
     "static/media/dojo.eeba2a97.svg": "/colorfy/static/media/dojo.eeba2a97.svg",
@@ -31,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.f0d2ec47.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.3d362046.chunk.js",
+    "static/js/2.20ce4407.chunk.js",
     "static/css/main.186b4d00.chunk.css",
-    "static/js/main.14010781.chunk.js"
+    "static/js/main.b7fc9f72.chunk.js"
   ]
 }
