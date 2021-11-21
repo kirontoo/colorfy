@@ -1,9 +1,75 @@
-.app-header {
+body {
     background-image: url('/src/images/jess-bailey-l3N9Q27zULw-unsplash.jpg');
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: none;
+    background-attachment: fixed;
+}
+
+h2 {
+    text-align: center;
+    padding: 4em 1em 0 2em;
+}
+
+h3 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 40px;
+}
+
+.amy-contact {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.amber-contact {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.zelle-contact {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.amy-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 75px;
+}
+
+.amy-picture-background {
+    height: 92%;
+    width: 92%;
+    background-image: url('../../images/amy_profile.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.amy-picture-background:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
 }
 
 .amber-profile {
@@ -14,7 +80,7 @@
     border-radius: 50%;
     height: 380px;
     width: 380px;
-    margin: 0 0px 0 100px;
+    margin: 0 0px 0 75px;
 }
 
 .amber-picture-background {
@@ -40,7 +106,7 @@
     border-radius: 50%;
     height: 380px;
     width: 380px;
-    margin: 0 0px 0 100px;
+    margin: 0;
 }
 
 .zelle-picture-background {
