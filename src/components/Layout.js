@@ -10,7 +10,12 @@ function Layout({ navLinks, brand, children }) {
                     <Navbar.Brand href="/">{brand}</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                        <Nav className="my-2 my-2-lg">{navLinks}</Nav>
+                        <Nav 
+                            style={{columnGap: "1rem", rowGap: "0.5rem"}}
+                            className="my-2 my-2-lg"
+                        >
+                            {navLinks}
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
