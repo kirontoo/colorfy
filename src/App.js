@@ -10,11 +10,11 @@ import ColorBook from './pages/ColorBook';
 function NavLinks() {
     return (
         <>
-            <Link to="/" className="text-decoration-none text-white" >
             <NavLink>
-                Home
+                <Link to="/" className="text-decoration-none text-white" >
+                    Home
+                </Link>
             </NavLink>
-            </Link>
             <Link to="/colorbook">
                 <Button>Try our app!</Button>
             </Link>
