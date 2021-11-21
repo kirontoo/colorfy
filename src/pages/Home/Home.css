@@ -12,14 +12,8 @@ h2 {
     padding: 4em 1em 0 2em;
 }
 
-h3 {
-    text-align: center;
-    padding: 0.5em;
-}
-
-p {
-    text-align: center;
-    justify-content: center;
+.card-text {
+    text-align: left;
 }
 
 .card {
@@ -29,28 +23,21 @@ p {
     margin: 0 auto;
     float: none;
     margin-bottom: 40px;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* background: none; */
+    border: none;
 }
 
-.amy-contact {
+.contact {
     text-align: center;
     font-size: 1.5rem;
-}
-
-.amber-contact {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.zelle-contact {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 8px;
-    padding-left: 0px;
 }
 
 .icon {
-    height: 7%;
-    width: 7%;
+    height: 2rem;
+    width: 2rem;
     margin-bottom: 0.3em;
 }
 
@@ -130,4 +117,47 @@ p {
 .zelle-picture-background:hover {
     transform: scale(1.07);
     transition: 1s ease-out;
+}
+
+.promo-image {
+    width: auto;
+    max-width: 100%;
+    min-height: 20rem;
+    border-radius: 1rem;
+    max-height: 20rem;
+}
+
+.demo {
+    background-image: url('../../images/colorfy_demo.gif');
+    background-size: 140% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-body {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.profile-name {
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.devicon {
+    background: none;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+
+.devicon:hover {
+    font-size: 1.8rem;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+.intro {
+    text-align: center;
 }
