@@ -1,5 +1,7 @@
 # Colorfy
 
+![colorfy gif](./src/images/colorfy_demo.gif)
+
 ## About Colorfy
 
 Colorfy is a mobile friendly single page app that allows users to color images
@@ -21,9 +23,6 @@ Colorfy was created as a part of the a Hackthon hosted by [Mintbean](https://www
 - Custom color picking
 - Color picking from pre-set color palettes
 - Drop down color pages selection
-
-### Demo
-![colorfy gif](./src/images/colorfy_demo.gif)
 
 ## Installation
 Clone this repo and then install the required packages using `npm` or `yarn`
