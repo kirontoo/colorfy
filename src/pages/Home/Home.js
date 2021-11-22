@@ -24,7 +24,7 @@ function Home() {
                     around with on your mobile device
                     </p>
                     <Link to="/colorbook">
-                      <Button>Get Started</Button>
+                      <Button size="lg">Get Started</Button>
                     </Link>
                   </div>
                   <div class="col-sm-6 text-right">
@@ -117,7 +117,7 @@ function Home() {
               <div class="card" id="card4">
                 <div class="card-body">
                   <div class="col-sm-6 d-flex flex-column align-items-start justify-content-center">
-                    <h3 class="card-title">Here's a small demo</h3>
+                    <h3 class="card-title">Here's a Small Demo</h3>
                     <Link to="/colorbook">
                       <Button size="lg">Get Started</Button>
                     </Link>
