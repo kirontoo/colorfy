@@ -17,7 +17,7 @@ function Home() {
             <div class="row">
               <div class="card" id="card1">
                 <div class="card-body">
-                  <div class="col-sm-6 d-flex flex-column p-2 align-items-start">
+                  <div class="col-sm-6 d-flex flex-column p-2 align-items-start justify-content-center">
                     <h3 class="card-title">Colorfy</h3>
                     <p class="card-text">
                     Colorfy is a simple coloring book app that you can play
