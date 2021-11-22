@@ -14,10 +14,10 @@ function ColorPageSelector({ coloringPage ,onSelectColoringPage }) {
         value={coloringPage}
       >
         { Object.keys(ColorPages).map((name) => {
-          return (
-            <option key={name} value={name}>{name}</option>
-          )
-        })
+            return (
+              <option key={name} value={name}>{name}</option>
+            )
+          })
         }
       </FormSelect>
     </FormGroup>

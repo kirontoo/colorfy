@@ -42,10 +42,10 @@ function ColorPalette({ defaultPalette, onSelectColor }) {
           value={currentPalette}
         >
           { Object.keys(Palettes).map((name, index) => {
-            return (
-              <option key={`${name}-${index}`} value={name}>{name}</option>
-            )
-          })
+              return (
+                <option key={`${name}-${index}`} value={name}>{name}</option>
+              )
+            })
           }
         </FormSelect>
       </FormGroup>
