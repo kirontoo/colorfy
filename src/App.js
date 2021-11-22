@@ -8,6 +8,9 @@ import ColorBook from './pages/ColorBook';
 function NavLinks() {
   return (
     <>
+      <NavLink href="https://github.com/kirontoo/colorfy">
+          <i class="devicon-github-original"></i>
+      </NavLink>
       <NavLink>
         <Link to="/" className="text-decoration-none text-white" >
         Features
