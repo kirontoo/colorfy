@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/colorfy/static/css/main.186b4d00.chunk.css",
-    "main.js": "/colorfy/static/js/main.b7fc9f72.chunk.js",
-    "main.js.map": "/colorfy/static/js/main.b7fc9f72.chunk.js.map",
-    "runtime-main.js": "/colorfy/static/js/runtime-main.f0d2ec47.js",
-    "runtime-main.js.map": "/colorfy/static/js/runtime-main.f0d2ec47.js.map",
+    "main.css": "/colorfy/static/css/main.fbc7d58f.chunk.css",
+    "main.js": "/colorfy/static/js/main.4824100b.chunk.js",
+    "main.js.map": "/colorfy/static/js/main.4824100b.chunk.js.map",
+    "runtime-main.js": "/colorfy/static/js/runtime-main.d2df0ae3.js",
+    "runtime-main.js.map": "/colorfy/static/js/runtime-main.d2df0ae3.js.map",
     "static/css/2.383c0125.chunk.css": "/colorfy/static/css/2.383c0125.chunk.css",
-    "static/js/2.20ce4407.chunk.js": "/colorfy/static/js/2.20ce4407.chunk.js",
-    "static/js/2.20ce4407.chunk.js.map": "/colorfy/static/js/2.20ce4407.chunk.js.map",
-    "static/js/3.2df1a7b3.chunk.js": "/colorfy/static/js/3.2df1a7b3.chunk.js",
-    "static/js/3.2df1a7b3.chunk.js.map": "/colorfy/static/js/3.2df1a7b3.chunk.js.map",
+    "static/js/2.cee9c430.chunk.js": "/colorfy/static/js/2.cee9c430.chunk.js",
+    "static/js/2.cee9c430.chunk.js.map": "/colorfy/static/js/2.cee9c430.chunk.js.map",
+    "static/js/3.ca02ce12.chunk.js": "/colorfy/static/js/3.ca02ce12.chunk.js",
+    "static/js/3.ca02ce12.chunk.js.map": "/colorfy/static/js/3.ca02ce12.chunk.js.map",
     "index.html": "/colorfy/index.html",
     "static/css/2.383c0125.chunk.css.map": "/colorfy/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.186b4d00.chunk.css.map": "/colorfy/static/css/main.186b4d00.chunk.css.map",
-    "static/js/2.20ce4407.chunk.js.LICENSE.txt": "/colorfy/static/js/2.20ce4407.chunk.js.LICENSE.txt",
+    "static/css/main.fbc7d58f.chunk.css.map": "/colorfy/static/css/main.fbc7d58f.chunk.css.map",
+    "static/js/2.cee9c430.chunk.js.LICENSE.txt": "/colorfy/static/js/2.cee9c430.chunk.js.LICENSE.txt",
     "static/media/Color_palette.d9ca3a88.png": "/colorfy/static/media/Color_palette.d9ca3a88.png",
     "static/media/Color_picker.676730dd.png": "/colorfy/static/media/Color_picker.676730dd.png",
     "static/media/Coloring_App.90b91dd7.png": "/colorfy/static/media/Coloring_App.90b91dd7.png",
@@ -24,15 +24,14 @@
     "static/media/dojo.eeba2a97.svg": "/colorfy/static/media/dojo.eeba2a97.svg",
     "static/media/gopher.ab9f8ccd.svg": "/colorfy/static/media/gopher.ab9f8ccd.svg",
     "static/media/hostgator.f8b941c1.svg": "/colorfy/static/media/hostgator.f8b941c1.svg",
-    "static/media/logo.6ce24c58.svg": "/colorfy/static/media/logo.6ce24c58.svg",
     "static/media/postgraphile.631afe6d.svg": "/colorfy/static/media/postgraphile.631afe6d.svg",
     "static/media/taskade.23872e3a.svg": "/colorfy/static/media/taskade.23872e3a.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0d2ec47.js",
+    "static/js/runtime-main.d2df0ae3.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.20ce4407.chunk.js",
-    "static/css/main.186b4d00.chunk.css",
-    "static/js/main.b7fc9f72.chunk.js"
+    "static/js/2.cee9c430.chunk.js",
+    "static/css/main.fbc7d58f.chunk.css",
+    "static/js/main.4824100b.chunk.js"
   ]
 }
