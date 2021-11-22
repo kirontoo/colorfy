@@ -16,7 +16,7 @@ function Layout({ navLinks, brand, children }) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav 
-              style={{columnGap: "1rem", rowGap: "0.5rem"}}
+              style={{columnGap: "0.5rem", rowGap: "0.5rem"}}
               className="my-2 my-2-lg"
             >
               {navLinks}
