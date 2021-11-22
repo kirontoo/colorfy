@@ -2,14 +2,14 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Layout from './components/Layout';
 import Button from 'react-bootstrap/Button';
 import NavLink from 'react-bootstrap/NavLink';
-import Home from './pages/Home/Home';
+import Home from './pages/Home';
 import ColorBook from './pages/ColorBook';
 
 function NavLinks() {
   return (
     <>
       <NavLink href="https://github.com/kirontoo/colorfy">
-          <i class="devicon-github-original"></i>
+          <i class="devicon-github-original text-white"></i>
       </NavLink>
       <NavLink>
         <Link to="/" className="text-decoration-none text-white" >
