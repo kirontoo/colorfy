@@ -38,5 +38,7 @@ npm run start
 ## Engineers
 - [Amy Nguyen-Dang](https://www.linkedin.com/in/amy-nguyen-dang/)
 - [Amber Terry](https://www.linkedin.com/in/amberterry/)
+
+## Designer
 - [Roselle Bernardino](https://linkedin.com/in/rosellebernardino)
 
