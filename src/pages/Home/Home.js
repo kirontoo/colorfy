@@ -163,7 +163,7 @@ function Home() {
                   <p className="intro">
                   Amber is a recent Full Stack Developer bootcamp grad. In her
                   freetime she enjoys camping, hiking, mountain biking, and
-                  anything that gets her outdoors
+                  anything that gets her outdoors.
                   </p>
                   <div className="contact">
                     <a href="https://github.com/Ope522">
