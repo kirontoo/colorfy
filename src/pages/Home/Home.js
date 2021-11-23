@@ -135,8 +135,8 @@ function Home() {
                         <h2>Meet the Engineers</h2>
                         <div class="row">
                             <div class="col">
-                                <div className="engineer-amy">
-                                    <div className="amy-profile">
+                                <div className="d-flex flex-column justify-content-center align-items-center">
+                                    <div className="profile">
                                         <div className="amy-picture-background"></div>
                                     </div>
                                     <h3 className="profile-name">Amy</h3>
@@ -155,8 +155,8 @@ function Home() {
                                 </div>
                             </div>
                             <div class="col">
-                                <div className="engineer-amber">
-                                    <div className="amber-profile">
+                                <div className="d-flex flex-column justify-content-center align-items-center">
+                                    <div className="profile">
                                         <div className="amber-picture-background"></div>
                                     </div>
                                     <h3 className="profile-name">Amber</h3>

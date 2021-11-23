@@ -41,7 +41,7 @@ h2 {
     margin-bottom: 0.3em;
 }
 
-.amy-profile {
+.profile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,6 @@ h2 {
     border-radius: 50%;
     height: 23.75rem;
     width: 23.75rem;
-    margin: 0 0 0 4.688rem;
 }
 
 .amy-picture-background {
@@ -65,17 +64,6 @@ h2 {
 .amy-picture-background:hover {
     transform: scale(1.07);
     transition: 1s ease-out;
-}
-
-.amber-profile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0.063rem 0 0 var(--white);
-    border-radius: 50%;
-    height: 23.75rem;
-    width: 23.75rem;
-    margin: 0 0 0 4.688rem;
 }
 
 .amber-picture-background {
