@@ -45,11 +45,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
+    box-shadow: 0 0.063rem 0 0 var(--white);
     border-radius: 50%;
-    height: 380px;
-    width: 380px;
-    margin: 0 0px 0 100px;
+    height: 23.75rem;
+    width: 23.75rem;
+    margin: 0 0 0 4.688rem;
 }
 
 .amy-picture-background {
@@ -71,11 +71,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
+    box-shadow: 0 0.063rem 0 0 var(--white);
     border-radius: 50%;
-    height: 380px;
-    width: 380px;
-    margin: 0 0px 0 100px;
+    height: 23.75rem;
+    width: 23.75rem;
+    margin: 0 0 0 4.688rem;
 }
 
 .amber-picture-background {
@@ -97,10 +97,10 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1px 0px 0px var(--white);
+    box-shadow: 0 0.063rem 0 0 var(--white);
     border-radius: 50%;
-    height: 380px;
-    width: 380px;
+    height: 23.75rem;
+    width: 23.75rem;
     margin: 0;
 }
 
