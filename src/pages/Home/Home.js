@@ -139,7 +139,7 @@ function Home() {
                                     <div className="profile">
                                         <div className="amy-picture-background"></div>
                                     </div>
-                                    <h3 className="profile-name">Amy</h3>
+                                    <h3 className="profile-name">Amy Nguyen-Dang</h3>
                                     <p className="intro">
                                         Amy is a Frontend Developer with a passion for learning new
                                         technologies. Ask her about mechanical keyboards!
@@ -159,7 +159,7 @@ function Home() {
                                     <div className="profile">
                                         <div className="amber-picture-background"></div>
                                     </div>
-                                    <h3 className="profile-name">Amber</h3>
+                                    <h3 className="profile-name">Amber Terry</h3>
                                     <p className="intro">
                                         Amber is a recent Full Stack Developer bootcamp grad. In her
                                         freetime she enjoys camping, hiking, mountain biking, and
@@ -183,7 +183,7 @@ function Home() {
                                     <div className="zelle-profile">
                                         <div className="zelle-picture-background"></div>
                                     </div>
-                                    <h3 className="profile-name">Roselle</h3>
+                                    <h3 className="profile-name">Roselle Bernardino</h3>
                                     <p className="intro">
                                         Roselle is a product designer with a background in interior
                                         design, graphic design, and project management. Loves Figma,
