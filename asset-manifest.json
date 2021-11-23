@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/colorfy/static/css/main.a1fd97ea.chunk.css",
-    "main.js": "/colorfy/static/js/main.0d5a9728.chunk.js",
-    "main.js.map": "/colorfy/static/js/main.0d5a9728.chunk.js.map",
+    "main.css": "/colorfy/static/css/main.26095b2e.chunk.css",
+    "main.js": "/colorfy/static/js/main.3d2dfa53.chunk.js",
+    "main.js.map": "/colorfy/static/js/main.3d2dfa53.chunk.js.map",
     "runtime-main.js": "/colorfy/static/js/runtime-main.d2df0ae3.js",
     "runtime-main.js.map": "/colorfy/static/js/runtime-main.d2df0ae3.js.map",
     "static/css/2.383c0125.chunk.css": "/colorfy/static/css/2.383c0125.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.ca02ce12.chunk.js.map": "/colorfy/static/js/3.ca02ce12.chunk.js.map",
     "index.html": "/colorfy/index.html",
     "static/css/2.383c0125.chunk.css.map": "/colorfy/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.a1fd97ea.chunk.css.map": "/colorfy/static/css/main.a1fd97ea.chunk.css.map",
+    "static/css/main.26095b2e.chunk.css.map": "/colorfy/static/css/main.26095b2e.chunk.css.map",
     "static/js/2.cee9c430.chunk.js.LICENSE.txt": "/colorfy/static/js/2.cee9c430.chunk.js.LICENSE.txt",
     "static/media/Color_palette.d9ca3a88.png": "/colorfy/static/media/Color_palette.d9ca3a88.png",
     "static/media/Color_picker.676730dd.png": "/colorfy/static/media/Color_picker.676730dd.png",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.d2df0ae3.js",
     "static/css/2.383c0125.chunk.css",
     "static/js/2.cee9c430.chunk.js",
-    "static/css/main.a1fd97ea.chunk.css",
-    "static/js/main.0d5a9728.chunk.js"
+    "static/css/main.26095b2e.chunk.css",
+    "static/js/main.3d2dfa53.chunk.js"
   ]
 }
