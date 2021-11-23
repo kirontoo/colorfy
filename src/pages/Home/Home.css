@@ -1,8 +1,8 @@
 body {
     background-image: url('/src/images/jess-bailey-l3N9Q27zULw-unsplash.jpg');
-    height: 100vh;
+    height: auto;
     width: 100%;
-    background-size: cover;
+    background-size: auto 105%;
     background-repeat: none;
     background-attachment: fixed;
 }
