@@ -1,167 +1,167 @@
 body {
-  background-image: url('/src/images/jess-bailey-l3N9Q27zULw-unsplash.jpg');
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: fixed;
+    background-image: url('/src/images/jess-bailey-l3N9Q27zULw-unsplash.jpg');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
 }
 
 h2 {
-  text-align: center;
-  padding: 4em 1em 0 2em;
+    text-align: center;
+    padding: 4em 1em 0 2em;
 }
 
 .card-text {
-  text-align: left;
+    text-align: left;
 }
 
 .card {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  float: none;
-  margin-bottom: 40px;
-  flex-direction: row;
-  padding: 1rem;
-  border-radius: 1rem;
-  /* background: none; */
-  border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 40px;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* background: none; */
+    border: none;
 }
 
 .contact {
-  text-align: center;
-  font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .icon {
-  height: 2rem;
-  width: 2rem;
-  margin-bottom: 0.3em;
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 0.3em;
 }
 
 .amy-profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 0px 0px var(--white);
-  border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0 0px 0 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
 }
 
 .amy-picture-background {
-  height: 92%;
-  width: 92%;
-  background-image: url('../../images/amy_profile.jpg');
-  background-size: cover;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 92%;
+    width: 92%;
+    background-image: url('../../images/amy_profile.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .amy-picture-background:hover {
-  transform: scale(1.07);
-  transition: 1s ease-out;
+    transform: scale(1.07);
+    transition: 1s ease-out;
 }
 
 .amber-profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 0px 0px var(--white);
-  border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0 0px 0 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0px 0 100px;
 }
 
 .amber-picture-background {
-  height: 92%;
-  width: 92%;
-  background-image: url('../../images/IMG_0278.JPG');
-  background-size: cover;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 92%;
+    width: 92%;
+    background-image: url('../../images/IMG_0278.JPG');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .amber-picture-background:hover {
-  transform: scale(1.07);
-  transition: 1s ease-out;
+    transform: scale(1.07);
+    transition: 1s ease-out;
 }
 
 .zelle-profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1px 0px 0px var(--white);
-  border-radius: 50%;
-  height: 380px;
-  width: 380px;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 0px 0px var(--white);
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0;
 }
 
 .zelle-picture-background {
-  height: 92%;
-  width: 92%;
-  background-image: url('../../images/zelle.jpg');
-  background-size: cover;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
+    height: 92%;
+    width: 92%;
+    background-image: url('../../images/zelle.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .zelle-picture-background:hover {
-  transform: scale(1.07);
-  transition: 1s ease-out;
+    transform: scale(1.07);
+    transition: 1s ease-out;
 }
 
 .promo-image {
-  width: auto;
-  max-width: 100%;
-  min-height: 20rem;
-  border-radius: 1rem;
-  max-height: 20rem;
+    width: auto;
+    max-width: 100%;
+    min-height: 20rem;
+    border-radius: 1rem;
+    max-height: 20rem;
 }
 
 .demo {
-  background-image: url('../../images/colorfy_demo.gif');
-  background-size: 110% auto;
-  background-repeat: no-repeat;
-  background-position: center;
+    background-image: url('../../images/colorfy_demo.gif');
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card-body {
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .profile-name {
-  text-align: center;
-  padding: 0.3rem;
+    text-align: center;
+    padding: 0.3rem;
 }
 
 .devicon {
-  background: none;
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
+    background: none;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
 }
 
 .devicon:hover {
-  font-size: 1.8rem;
-  height: 2.2rem;
-  width: 2.2rem;
+    font-size: 1.8rem;
+    height: 2.2rem;
+    width: 2.2rem;
 }
 
 .intro {
-  text-align: center;
+    text-align: center;
 }
 
 .app-header {
-  padding-bottom: 5rem;
+    padding-bottom: 5rem;
 }
